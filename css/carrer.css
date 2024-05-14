@@ -1,3 +1,127 @@
-.row-first{
-    height: 200px;
+.row-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 240px;
+}
+
+.row-first>button {
+    width: 100px;
+}
+
+.row-long {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.row-long>button {
+    width: 100px;
+    border: 2px solid #fff;
+    font-weight: bold;
+}
+
+.background-administration{
+    position:relative;
+    overflow:hidden;
+
+}
+.background-administration::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    height: 100%;
+    background-image: url('../assets/images/IMAGE\ \ CATEGORY\ ADMINISTRATION.jpg');
+    background-size:100%;
+    filter: blur(1px) brightness(50%) opacity(70%) ;
+    z-index:-1;
+}
+
+.background-accounting{
+    overflow:hidden;
+    position:relative;
+}
+.background-accounting::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    height: 100%;
+    background-image: url('../assets/images/IMAGE\ \ CATEGORY\ ACCOUNTING.jpg');
+    background-size: cover;
+    filter: blur(1px) brightness(50%) opacity(70%) ;
+    z-index:-1;
+
+}
+.background-architecture{
+    position:relative;
+    overflow:hidden;
+
+}
+.background-architecture::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    height: 100%;
+    background-image: url('../assets/images/IMAGE\ \ CATEGORY\ ARCHITECTURE.jpg');
+    background-size: cover;
+    filter: brightness(80%) opacity(90%) ;
+    z-index:-1;
+}
+.background-biology{
+    position:relative;
+    overflow:hidden;
+
+}
+.background-biology::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    height: 100%;
+    background-image: url('../assets/images/IMAGE\ \ CATEGORY\ BIOLOGY.jpg');
+    background-size: cover;
+    background-position: 40% 50%;
+    filter: blur(1px) brightness(70%) opacity(80%) ;
+    z-index:-1;
+}
+.background-mathematics{
+    position:relative;
+    overflow:hidden;
+
+}
+.background-mathematics::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    height: 100%;
+    background-image: url('../assets/images/IMAGE\ \ CATEGORY\ MATHEMATICS.jpg');
+    background-size: cover;
+    filter: brightness(50%) opacity(80%) ;
+    z-index:-1;
+}
+.background-programming{
+    position:relative;
+    overflow:hidden;
+}
+.background-programming::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    height: 100%;
+    background-image: url('../assets/images/IMAGE\ \ CATEGORY\ PROGRAMMING.jpg');
+    background-size: cover;
+    filter:  brightness(60%) opacity(80%) ;
+    z-index:-1;
 }
