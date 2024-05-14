@@ -1,12 +1,23 @@
 :root {
     --marine: #004094;
+    --gold: #ffc400;
 }
 
 .bg-marine {
-    color: aliceblue;
-    background-color: #004094 !important;
+    color: #fff;
+    background-color: var(--marine) !important;
 }
 
+
+.text-marine{
+    color: var(--marine) !important;
+    font-weight: bold;
+}
+
+.text-gold{
+    color: var(--gold) !important;
+    font-weight: bold;
+}
 .hover-scaleX {
     transform: scale(1);
     transition: transform ease 0.2s;
@@ -24,6 +35,7 @@
     text-decoration-thickness: 4px;
     text-underline-offset: 2px;
 }
+
 
 .img-retrato{
     display:flex;

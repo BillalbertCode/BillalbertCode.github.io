@@ -1,0 +1,34 @@
+.profile-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:120px;
+    overflow: hidden;
+}
+.profile-icon > img {
+    width: 100px;
+    height:100px;
+    z-index: 2;
+}
+
+.profile-icon > img:hover{
+    border: 3px solid var(--gold) !important;
+    transform:scale(1.1) !important;
+}
+.background-team{
+    position:relative;
+    overflow:hidden;
+}
+.background-team::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    height: 100%;
+    background-image: url('../assets/images/IMAGE\ BACKGROUND\ CARD\ TEAM\ \ \(1\).jpg');
+    background-size: cover;
+    filter:  brightness(60%) opacity(80%) ;
+    z-index:1;
+}
