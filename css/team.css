@@ -83,9 +83,17 @@
 }
 
 @media (max-width: 425px) {
-    .sliderContainer > div{
-        flex-direction: column;
+    #Reviews{
+        margin: 4px;
+        text-align: center;
+        padding:20px !important;
     }
+    .sliderContainer>div {
+        flex-direction: column;
+        left:90%;
+        bottom:0;
+    }
+
     .sliderContainer .slider-video-item {
         width: 50px;
     }
