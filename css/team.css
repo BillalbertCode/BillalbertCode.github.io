@@ -32,3 +32,46 @@
     filter:  brightness(60%) opacity(80%) ;
     z-index:1;
 }
+/* Video */
+
+.sliderContainer{
+    height:60vh;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sliderContainer .sliderVideo{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+}
+
+.sliderContainer > div{
+    position: absolute;
+    bottom:50px;
+    left:50%;
+    transform: translateX(-50%);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.sliderContainer .slider-video-item{
+    width:80px;
+    filter: opacity(80%) brightness(80%);
+    transition:all ease 0.2s;
+    cursor:pointer;
+}
+
+.sliderContainer .slider-video-item:hover , .sliderContainer .slider-video-item.active{
+    filter: brightness(100%);
+    transform: translateY(-15%);
+}
+
+.slider-video-item >img{
+    width: 100%;
+}
