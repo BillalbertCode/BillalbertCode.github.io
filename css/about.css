@@ -1,0 +1,15 @@
+#aboutText{
+    width:80% ;
+}
+@media (max-width:425px){
+    #aboutText{
+        text-align:center ;
+        width: 100% ;
+    }
+    #aboutText > p{
+        font-size:18px !important ;
+    }
+    #aboutButton {
+        text-align:center;
+    }
+}
