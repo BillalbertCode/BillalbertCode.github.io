@@ -1,6 +1,5 @@
 function videoSlider(event,links){
     const sliderItems = document.querySelectorAll(".slider-video-item")
-    console.log(sliderItems)
     sliderItems.forEach((item) => {
         item.classList.remove("active")
     })

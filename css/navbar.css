@@ -1,1 +1,16 @@
+#navbar{
+    transition: all ease 0.4 !important;
+}
 
+#navbar:hover{
+    color: #fff !important;
+    background: var(--marine) !important;
+    transition: all ease 0.4 !important;
+}
+
+@media (max-width: 780px) {
+    #linksContacto{
+        display: none;
+    }
+    
+}

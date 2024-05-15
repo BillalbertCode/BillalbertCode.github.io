@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/carrer.css">
   <link rel="stylesheet" href="./css/team.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+
+
   <script src="./js/videoSlider.js"></script>
 
   <!-- Add Bootstrap CSS -->
@@ -17,9 +20,9 @@
 
 <body>
   <header>
-    <nav class="navbar fixed-top bg-transparent ">
+    <nav id="navbar" class="navbar fixed-top">
       <!-- Links de contacto -->
-      <div class="container ">
+      <div id="linksContacto" class="container ">
         <div>
           <a class="icon-link icon-link-hover link-underline link-underline-opacity-0 text-white fs-6 mx-4"
             title="Numero de Telefono" href="tel:+18338862681">
@@ -54,8 +57,7 @@
                 d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
             </svg>
           </a>
-          <a class="icon-link hover-scaleX text-white link-underline link-underline-opacity-0" title="Instagram"
-            href="https://www.instagram.com/ijosesilvera/">
+          <a class="icon-link hover-scaleX text-white link-underline link-underline-opacity-0" title="Instagram" href="https://www.instagram.com/ijosesilvera/">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
               viewBox="0 0 16 16">
               <path
@@ -102,7 +104,7 @@
   </header>
 
   <main>
-    <section id="#Home" class="container-fluid">
+    <section id="Home" class="container-fluid">
       <!-- Video Background -->
       <video class="background-video" autoplay loop muted plays-inline>
         <source src="./assets/Videos/hero-video.mp4" type="video/mp4">
@@ -528,8 +530,8 @@
           <a class="icon-link icon-link-hover link-underline link-underline-opacity-0 text-white fs-6 "
             title="Ubicacion Adress"
             href="https://www.google.com/maps/place/6080+Center+Dr+6th+Floor,+Los+Angeles,+CA+90045,+USA/@33.9766943,-118.3941493,17z/data=!3m2!4b1!5s0x80e821c191560e17:0x9c9195d3fdd0659!4m6!3m5!1s0x80c2b74cdd0d36e7:0x3fb2817a4472f90d!8m2!3d33.9766899!4d-118.3915744!16s%2Fg%2F11qpw22yvq?hl=en&entry=ttu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+              viewBox="0 0 16 16">
               <path
                 d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
               <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
@@ -590,7 +592,8 @@
         <p>This Website Was Designed And Developed by josesilvera.com</p>
       </div>
       <div>
-        <a class="icon-link hover-scaleX link-underline link-underline-opacity-0 m-4" href="https://striveenterprise.com/" title="Home">
+        <a class="icon-link hover-scaleX link-underline link-underline-opacity-0 m-4"
+          href="https://striveenterprise.com/" title="Home">
           <img style="width: 120px;" src="./assets/images/logo Silvera Enterprises.png" />
         </a>
       </div>
@@ -599,6 +602,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="./js/navbar.js"></script>
+
 </body>
 
 </html>

@@ -4,8 +4,9 @@
 }
 
 .bg-marine {
-    color: #fff;
-    background-color: var(--marine) !important;
+    color: #fff !important;
+    background: var(--marine) !important;
+    transition: all ease 0.4 !important;
 }
 
 
