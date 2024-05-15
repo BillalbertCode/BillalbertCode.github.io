@@ -13,11 +13,19 @@
         display: flex ;
         flex-direction: column;
         align-items: center !important;
+        margin:0px !important;
     }
     #Home article{
         text-align: center;
     }
     #Home form {
         width: 80% !important;
+    }
+    #Home form .card-body {
+        display: none;
+    }
+    #Home form:hover .card-body {
+        display: block;
+
     }
 }
