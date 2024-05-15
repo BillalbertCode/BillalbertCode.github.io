@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: end;
     height: 240px;
+    width:47% !important;
 }
 
 .row-first>button {
@@ -16,10 +17,14 @@
     justify-content: end;
 }
 
+
 .row-long>button {
     width: 100px;
     border: 2px solid #fff;
     font-weight: bold;
+}
+.coursesColumn{
+    width:48% !important;
 }
 
 .background-administration{
@@ -124,4 +129,17 @@
     background-size: cover;
     filter:  brightness(60%) opacity(80%) ;
     z-index:-1;
+}
+
+@media (max-width:425px){
+    .row-first{
+        width:100% !important;
+        height: 110px;
+    }
+    #Courses .row{
+        gap:6px !important;
+    }
+    #Courses .coursesColumn{
+        width:100% !important;
+    }
 }
