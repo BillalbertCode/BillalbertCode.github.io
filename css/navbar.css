@@ -9,8 +9,24 @@
 }
 
 @media (max-width: 780px) {
+    #navbar{
+        background: var(--marine) !important;
+    }
+    .navbar-brand.m-4{
+        margin:0px !important;
+    }
+
+    #navbar .navbar-brand img{
+        margin:0px !important;
+        width: 50px !important;
+    }
     #linksContacto{
         display: none;
     }
-    
+}
+@media (max-width: 425px){
+    #navbar a[href]{
+        font-size:16px !important;
+
+    }
 }

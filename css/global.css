@@ -46,15 +46,7 @@
     height:100px;
     border-radius: 100%;
 }
-.background-video{
-    filter: brightness(80%) blur(2px);
-    position:absolute;
-    height: 105%;
-    width: 105%;
-    right:0;
-    bottom:0;
-    z-index: -1;
-}
+
 .background-beneficios{
     position:relative;
 }

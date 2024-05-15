@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./css/carrer.css">
   <link rel="stylesheet" href="./css/team.css">
   <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/home.css">
+
 
 
   <script src="./js/videoSlider.js"></script>
@@ -20,11 +22,12 @@
 
 <body>
   <header>
-    <nav id="navbar" class="navbar fixed-top">
+    <nav id="navbar" class="navbar fixed-top d-flex flex-column navbar-expand-md">
       <!-- Links de contacto -->
+
       <div id="linksContacto" class="container ">
         <div>
-          <a class="icon-link icon-link-hover link-underline link-underline-opacity-0 text-white fs-6 mx-4"
+          <a class="icon-link icon-link-hover link-underline link-underline-opacity-0 text-white fs-6 mx-4 "
             title="Numero de Telefono" href="tel:+18338862681">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="bi bi-telephone-forward mx-2" viewBox="0 0 16 16">
@@ -57,7 +60,8 @@
                 d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
             </svg>
           </a>
-          <a class="icon-link hover-scaleX text-white link-underline link-underline-opacity-0" title="Instagram" href="https://www.instagram.com/ijosesilvera/">
+          <a class="icon-link hover-scaleX text-white link-underline link-underline-opacity-0" title="Instagram"
+            href="https://www.instagram.com/ijosesilvera/">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
               viewBox="0 0 16 16">
               <path
@@ -85,11 +89,19 @@
       <!-- Navegacion en la pagina -->
       <div class="container">
         <div>
-          <a class="icon-link hover-scaleX link-underline link-underline-opacity-0 m-4" href="#Home" title="Home">
+          <a class="navbar-brand icon-link hover-scaleX link-underline link-underline-opacity-0 m-4" href="#Home"
+            title="Home">
             <img style="width: 80px;" src="./assets/images/LOGO.png" />
           </a>
         </div>
-        <div class="grid text-center fs-5">
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-distribute-vertical" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 1.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 0-1h-13a.5.5 0 0 0-.5.5m0 13a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 0-1h-13a.5.5 0 0 0-.5.5"/>
+            <path d="M2 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+          </svg>
+        </button>
+        <div class="grid text-center fs-5 collapse navbar-collapse " id="navbarSupportedContent">
           <a class=" mx-2 text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-100-hover "
             href="#About">About Us</a>
           <a class=" mx-2 text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-100-hover "
@@ -106,22 +118,22 @@
   <main>
     <section id="Home" class="container-fluid">
       <!-- Video Background -->
-      <video class="background-video" autoplay loop muted plays-inline>
+      <video class="background-video object-fit-cover" autoplay loop muted plays-inline>
         <source src="./assets/Videos/hero-video.mp4" type="video/mp4">
       </video>
       <div style="height: 100vh;" class="row d-flex align-items-center justify-content-around text-light">
         <!-- Seccion de bienvenida -->
-        <article class="col-md-6 ">
+        <article class="col-12 col-md-6 ">
           <h2 class="h5 mb-2">Welcome a the University</h2>
           <h3 class="display-6 mb-3">We are an online platform to make learning</h3>
           <button class="border border-2 btn btn-lg btn-outline-warning rounded-pill text-light fw-semibold">Get
             Now</button>
         </article>
         <!-- Formulario -->
-        <aside class="col-6 col-md-4 mx-6">
+        <aside class="col-12 col-md-4 mx-3">
           <form id="form" class="card border-0 shadow-lg">
-            <div class="card-header border-bottom border-5 border-warning bg-marine text-light text-center h5  ">
-              Register now!
+            <div class="card-header border-bottom border-5 border-warning bg-marine text-light    ">
+              <p class="h5">Register now!</p>
             </div>
             <div class="card-body">
               <div class="mb-3">
@@ -312,18 +324,18 @@
           <div style="width: 48%;" class="col-6   ">
 
             <div class="row justify-content-between gap-3">
-              <div style="width: 48%;"
+              <div style="width: 47%;"
                 class=" col-6 row-first rounded shadow-sm hover-scaleX background-administration">
                 <div class="background-filter-marine rounded"></div>
-                <h2 class="mb-3 h4">Administracion </h2>
+                <h2 class="mb-3 h5">Administracion </h2>
                 <button style="width: 100px;"
                   class="btn btn-warning btn-sm border border-2 text-light fw-bold rounded-pill mb-4">
                   Explore</button>
               </div>
 
-              <div style="width: 48%;" class="col-6  row-first rounded shadow-sm hover-scaleX background-accounting">
+              <div style="width: 47%;" class="col-6  row-first rounded shadow-sm hover-scaleX background-accounting">
                 <div class="background-filter-marine rounded"></div>
-                <h2 class="mb-3 h4">Accouting </h2>
+                <h2 class="mb-3 h5">Accouting </h2>
                 <button style="width: 100px;"
                   class="btn btn-warning btn-sm border border-2 text-light fw-bold rounded-pill mb-4">
                   Explore</button>
@@ -443,7 +455,7 @@
       </div>
     </section>
     <section id="Reviews" class="container-fluid row row-cols-1 p-5">
-      <div style="min-width: 300px;
+      <div style="
       margin: 0px;" class="col-4 container ">
         <p class="h1 fw-normal p-2 ">For us it is a very important to know the opinions of our clients </p>
       </div>
